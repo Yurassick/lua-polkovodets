@@ -291,6 +291,14 @@ function Tile:bind_ctx(context)
         assert(sdl_renderer:copy(fog.texture, hex_rectange, dst))
       end
     end
+    
+    --draw filter
+    if (spotting) then
+	  if (units_on_tile == 1) then
+    local filter_land = terrain:get_icon('filter_land')
+	  assert(sdl_renderer:copy(filter_land.texture, hex_rectange, dst))
+	  end
+    end
 
     -- draw flag and unit(s)
     _.each(self.drawing.objects, function(k, v) v:draw() end)
