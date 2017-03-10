@@ -50,6 +50,8 @@ function Terrain:initialize(renderer, hex_geometry, terrain_data, dirs_data)
   load_icon('fog')
   load_icon('managed')
   load_icon('participant')
+  load_icon('filter_land')
+  load_icon('filter_air')
 
   -- hard-coded value
   local fog_image = self:get_icon('fog')
