@@ -166,6 +166,8 @@ function DataLoader.load(gear, scenario_path)
       participant = assert(landscape_icon_for.participant, landscape_path .. " /image don't have participant image"),
       grid        = assert(landscape_icon_for.grid, landscape_path .. " /image don't have grid image"),
       managed     = assert(landscape_icon_for.managed, landscape_path .. " /image don't have managed image"),
+      filter_land = assert(landscape_icon_for.filter_land, landscape_path .. " /image don't have filter_land image"),
+	    filter_air  = assert(landscape_icon_for.filter_air, landscape_path .. " /image don't have filter_air image"),	
     },
     weather_types = weather_types,
     terrain_types = terrain_types,
